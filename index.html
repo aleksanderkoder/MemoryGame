@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Memory</title>
-        <meta name="description" content="">
+        <meta name="description" content="The classic game of memory">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,6 +15,17 @@
     <body>
         <div id="page-container">
             <h1 id="page-header">Memory</h1>
+            <h2 id="page-subheader">&lt;Coding Edition/&gt;</h2>
+            <section id="menu">
+                <h3>Select amount of cards:</h3>
+                <input type="radio" id="radio-card-6" name="card-number" value="6">
+                <label for="radio-card-6">6 cards</label> <br>
+                <input type="radio" id="radio-card-12" name="card-number" value="12">
+                <label for="radio-card-12">12 cards</label> <br>
+                <input type="radio" id="radio-card-16" name="card-number" value="16">
+                <label for="radio-card-16">16 cards</label> <br>
+                <button id="btn-start" onclick="startGame()">Start game</button> 
+            </section>
             <section id="game-wrapper">
                 <!-- <div id="c1" class="card" onclick="turnCard(this)">
                     <span class="card-front">?</span>
@@ -24,7 +35,9 @@
                     <span class="card-front">?</span>
                     <span class="card-back">Back</span>
                 </div> -->
+                
             </section>
+            <footer>Tip: Use TAB to navigate and ENTER to activate selected card!</footer>
         </div>
         
         <script src="main.js" async defer></script>

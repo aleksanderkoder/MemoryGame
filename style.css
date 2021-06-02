@@ -1,13 +1,23 @@
+body {
+    background-color: black;
+}
+
 #page-header {
     font-size: 72px;
     color: white;
     text-align: center;
+    margin: 10px; 
     font-family: 'Source Sans Pro', sans-serif;
     text-shadow: 1px 0px 1px #000000, 0px 1px 1px #000000,
      2px 1px 1px #000000, 1px 2px 1px #000000, 3px 2px 1px #000000,
       2px 3px 1px #000000, 4px 3px 1px #000000, 3px 4px 1px #000000,
        5px 4px 1px #000000, 4px 5px 1px #000000, 6px 5px 1px #000000,
         5px 6px 1px #000000, 7px 6px 1px #000000;
+}
+
+#page-subheader {
+    margin-bottom: 75px; 
+    text-shadow: 0 1px 1px #000000;
 }
 
 #page-container {
@@ -20,17 +30,19 @@
     align-items: center;   
     height: 100%;
     width: 100%;
+    font-family: 'DM Mono', monospace;
+    color: white;
     background-image: url(./images/def%20back.jpg);
     background-size: cover; 
-
 }
 
 #game-wrapper {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 70%;
+    margin-bottom: 50px;
 }
 
 .card {
@@ -45,16 +57,11 @@
     transition: 0.8s;
     transform-style: preserve-3d;
     border-radius: 5px;
-    color: white;
-    font-family: 'DM Mono', monospace;
     box-shadow: 5px 5px 4px rgb(0, 0, 0);
 } 
 
-
-
 .card-front {
     position: absolute;
-    /* font-family: 'Source Sans Pro', sans-serif; */
     font-size: 72px;
     backface-visibility: hidden;
     user-select: none;
@@ -78,5 +85,35 @@
 }
 
 .completed {
-    display: none;
+    visibility: hidden;
+}
+
+#game-wrapper:focus {
+    outline: 3px solid white;
+}
+
+#menu:focus {
+    outline: 1px solid white;
+}
+
+#btn-start {
+    font-family: 'DM Mono', monospace;
+    margin: 25px;
+}
+
+input[type="radio"]::after {
+    filter: greyscale(1);
+    background-color: grey;
+    color: grey;
+}
+
+input[type="radio"]::checked:after {
+    filter: greyscale(1);
+    background-color: grey;
+    color: grey;
+}
+
+footer {
+    /* position: absolute;  */
+    bottom: 15px;
 }
