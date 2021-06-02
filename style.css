@@ -54,12 +54,14 @@
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 72px;
     backface-visibility: hidden;
+    user-select: none;
 }
 
 .card-back {
     position: absolute;
     transform: rotateY(180deg);
     backface-visibility: hidden;  
+    user-select: none;
 }
 
 .flipped {
