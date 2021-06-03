@@ -2,6 +2,7 @@ body {
     background-color: black;
 }
 
+/* Main page header */
 #page-header {
     font-size: 72px;
     color: white;
@@ -15,11 +16,13 @@ body {
         5px 6px 1px #000000, 7px 6px 1px #000000;
 }
 
+/* Second smaller header */
 #page-subheader {
     margin-bottom: 75px; 
     text-shadow: 0 1px 1px #000000;
 }
 
+/* Main page container */
 #page-container {
     display: flex; 
     position: absolute;
@@ -36,6 +39,7 @@ body {
     background-size: cover; 
 }
 
+/* Wraps the game cards */
 #game-wrapper {
     display: none;
     flex-wrap: wrap;
@@ -67,20 +71,21 @@ body {
 .card-front {
     position: absolute;
     font-size: 72px;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* Hides back side of card */
     user-select: none;
 }
 
 .card-back {
     position: absolute;
     font-size: 72px;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;  
+    transform: rotateY(180deg); /* Starts rotated so it's hidden */
+    backface-visibility: hidden;  /* Hides back side of card */
     user-select: none;
 }
 
+/* State for flipped card */
 .flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Rotates card so visible side appears */
     box-shadow: none;
 }
 
@@ -88,6 +93,7 @@ body {
     box-shadow: 3px 3px 2px rgb(255, 255, 255);
 }
 
+/* Last state of matching cards */
 .completed {
     visibility: hidden;
 }
@@ -100,21 +106,17 @@ body {
     outline: 1px solid white;
 }
 
-#btn-start {
+button {
     font-family: 'DM Mono', monospace;
     margin: 25px;
 }
 
-input[type="radio"]::after {
-    filter: greyscale(1);
-    background-color: grey;
-    color: grey;
-}
-
-input[type="radio"]::checked:after {
-    filter: greyscale(1);
-    background-color: grey;
-    color: grey;
+/* Score screen after game ends */
+#score-screen {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 footer {

@@ -26,17 +26,13 @@
                 <label for="radio-card-16">16 cards</label> <br>
                 <button id="btn-start" onclick="startGame()">Start game</button> 
             </section>
-            <section id="game-wrapper">
-                <!-- <div id="c1" class="card" onclick="turnCard(this)">
-                    <span class="card-front">?</span>
-                    <span class="card-back">Back</span>
-                </div>
-                <div id="c2" class="card" onclick="turnCard(this)">
-                    <span class="card-front">?</span>
-                    <span class="card-back">Back</span>
-                </div> -->
-                
-            </section> 
+            <section id="game-wrapper"></section> 
+            <section id="score-screen">
+                <h2>You completed the game!</h2> <br>
+                <p id="total-moves"></p> <br>
+                <p id="total-elapsed-time">Total elapsed time</p>
+                <button onclick="playAgain()">Play again</button>
+            </section>
             <footer>Tip: Use TAB to navigate and ENTER to activate selected card!</footer>
         </div>
         
