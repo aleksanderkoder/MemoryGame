@@ -45,6 +45,10 @@ body {
     margin-bottom: 50px;
 }
 
+#menu {
+    text-shadow: 0 1px 1px #000000;
+}
+
 .card {
     display: flex;
     flex-basis: 20%;

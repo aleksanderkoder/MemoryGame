@@ -13,7 +13,6 @@ let failSound = new Audio("sounds/fail.wav");
 // Draws random cards and populates the game wrapper
 function populateCards() {
     let cardNumber = wantedNumberOfCards; 
-    alert("cardnumber "+cardNumber)
     for(let cardCount = 0; cardCount < cardNumber; cardCount++) {
         let elemCard = document.createElement("div");
         elemCard.id = cardCount; 
@@ -101,6 +100,7 @@ function checkMatching() {
     return false; 
 }
 
+// Starts game with selected amount of cards
 function startGame() {
     document.getElementById("menu").style.display = "none";
     document.getElementById("game-wrapper").style.display = "flex"
