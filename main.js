@@ -13,7 +13,6 @@ let music = new Audio("sounds/bit-forest.flac");
 let turnSound = new Audio("sounds/collect-point.wav");
 let matchSound = new Audio("sounds/jingle.wav");
 let failSound = new Audio("sounds/fail.wav");
-
 turnSound.volume = 0.5; 
 matchSound.volume = 0.5; 
 failSound.volume = 0.5; 
